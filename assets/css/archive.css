@@ -1,0 +1,346 @@
+.archive-header,
+.search-header {
+    text-align: center;
+    padding: 40px 0;
+    margin-bottom: 30px;
+}
+
+.archive-icon,
+.search-icon {
+    width: 80px;
+    height: 80px;
+    margin: 0 auto 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: var(--gradient-primary);
+    border-radius: 50%;
+    font-size: 2rem;
+    color: white;
+    box-shadow: 0 8px 30px var(--shadow-color);
+}
+
+.archive-title,
+.search-title {
+    font-size: 2rem;
+    background: var(--gradient-primary);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    margin-bottom: 10px;
+}
+
+.archive-description {
+    color: var(--text-light);
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.search-count {
+    color: var(--text-light);
+    font-size: 1rem;
+}
+
+.archive-filter {
+    background: var(--card-bg);
+    padding: 20px;
+    border-radius: 12px;
+    margin-bottom: 30px;
+    box-shadow: 0 4px 15px var(--shadow-color);
+}
+
+.filter-form {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    align-items: center;
+}
+
+.filter-select {
+    padding: 10px 20px;
+    border: 2px solid var(--border-color);
+    border-radius: 25px;
+    background: var(--bg-color);
+    color: var(--text-color);
+    font-size: 0.9rem;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.filter-select:focus {
+    outline: none;
+    border-color: var(--primary-color);
+}
+
+.filter-btn {
+    padding: 10px 25px;
+    background: var(--gradient-primary);
+    color: white;
+    border: none;
+    border-radius: 25px;
+    font-size: 0.9rem;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.filter-btn:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 15px var(--shadow-color);
+}
+
+.search-form-large {
+    max-width: 600px;
+    margin: 0 auto 40px;
+}
+
+.search-form-large .search-form {
+    display: flex;
+    gap: 10px;
+}
+
+.search-form-large .search-field {
+    flex: 1;
+    padding: 15px 25px;
+    border: 2px solid var(--border-color);
+    border-radius: 30px;
+    font-size: 1rem;
+    transition: all 0.3s ease;
+}
+
+.search-form-large .search-field:focus {
+    outline: none;
+    border-color: var(--primary-color);
+    box-shadow: 0 0 0 4px rgba(255, 85, 34, 0.1);
+}
+
+.search-form-large .search-submit {
+    padding: 15px 30px;
+    background: var(--gradient-primary);
+    color: white;
+    border: none;
+    border-radius: 30px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.search-form-large .search-submit:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 8px 25px var(--shadow-color);
+}
+
+.search-results-wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.search-result-item {
+    background: var(--card-bg);
+    border-radius: 16px;
+    padding: 25px;
+    box-shadow: 0 4px 20px var(--shadow-color);
+    transition: all 0.3s ease;
+}
+
+.search-result-item:hover {
+    transform: translateX(10px);
+    box-shadow: 0 8px 30px var(--shadow-color);
+}
+
+.result-content {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.result-header {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.result-title {
+    font-size: 1.2rem;
+    line-height: 1.4;
+}
+
+.result-title a {
+    color: var(--text-color);
+}
+
+.result-title a:hover {
+    color: var(--primary-color);
+}
+
+.result-meta {
+    display: flex;
+    gap: 20px;
+    color: var(--text-light);
+    font-size: 0.85rem;
+}
+
+.result-meta span {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.result-meta i {
+    color: var(--primary-color);
+}
+
+.result-excerpt {
+    color: var(--text-light);
+    font-size: 0.95rem;
+    line-height: 1.7;
+}
+
+.result-link {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    color: var(--primary-color);
+    font-weight: 500;
+    transition: all 0.3s ease;
+}
+
+.result-link:hover {
+    gap: 12px;
+}
+
+.no-results,
+.no-posts {
+    text-align: center;
+    padding: 60px 20px;
+}
+
+.no-results-icon,
+.no-posts-icon {
+    width: 100px;
+    height: 100px;
+    margin: 0 auto 25px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: var(--bg-color);
+    border-radius: 50%;
+    font-size: 2.5rem;
+    color: var(--primary-color);
+}
+
+.no-results h2,
+.no-posts h2 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+    color: var(--text-color);
+}
+
+.no-results p,
+.no-posts p {
+    color: var(--text-light);
+    margin-bottom: 30px;
+}
+
+.suggestions {
+    margin-top: 30px;
+}
+
+.suggestions h4 {
+    margin-bottom: 15px;
+    color: var(--text-color);
+}
+
+.tag-cloud {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+}
+
+.tag-cloud a {
+    display: inline-block;
+    padding: 8px 16px;
+    background: var(--bg-color);
+    color: var(--primary-color);
+    border-radius: 20px;
+    font-size: 0.9rem;
+    transition: all 0.3s ease;
+}
+
+.tag-cloud a:hover {
+    background: var(--gradient-primary);
+    color: white;
+    transform: translateY(-3px);
+}
+
+.pagination {
+    display: flex;
+    justify-content: center;
+    margin-top: 40px;
+    gap: 8px;
+}
+
+.pagination .nav-links {
+    display: flex;
+    gap: 8px;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.pagination a,
+.pagination span {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-width: 40px;
+    height: 40px;
+    padding: 0 12px;
+    background: var(--card-bg);
+    border-radius: 20px;
+    color: var(--text-color);
+    font-size: 0.9rem;
+    transition: all 0.3s ease;
+    box-shadow: 0 2px 10px var(--shadow-color);
+}
+
+.pagination a:hover {
+    background: var(--gradient-primary);
+    color: white;
+    transform: translateY(-2px);
+}
+
+.pagination .current {
+    background: var(--gradient-primary);
+    color: white;
+}
+
+@media (max-width: 768px) {
+    .archive-title,
+    .search-title {
+        font-size: 1.5rem;
+    }
+
+    .filter-form {
+        flex-direction: column;
+    }
+
+    .filter-select {
+        width: 100%;
+    }
+
+    .search-form-large .search-form {
+        flex-direction: column;
+    }
+
+    .search-form-large .search-submit {
+        justify-content: center;
+    }
+
+    .search-result-item:hover {
+        transform: none;
+    }
+}
