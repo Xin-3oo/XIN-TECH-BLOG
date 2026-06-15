@@ -1,0 +1,1158 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>随心3oo - 主题预览</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.bootcdn.net/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="assets/css/single.css">
+    <link rel="stylesheet" href="assets/css/archive.css">
+    <link rel="stylesheet" href="assets/css/components.css">
+    <link rel="stylesheet" href="live2d/css/live2d.css">
+    <style>
+        .preview-section {
+            display: none;
+        }
+        .preview-section.active {
+            display: block;
+        }
+    </style>
+</head>
+<body>
+    <div class="reading-progress" id="readingProgress"></div>
+
+    <header class="site-header">
+        <div class="container">
+            <div class="header-inner">
+                <nav class="main-navigation main-navigation-centered" id="primary-navigation">
+                    <button class="menu-toggle" aria-controls="primary-menu" aria-expanded="false">
+                        <i class="fas fa-bars"></i>
+                    </button>
+                    <ul id="primary-menu">
+                        <li><a href="#home">首页</a></li>
+                        <li><a href="#archive">归档</a></li>
+                        <li><a href="#message-board">留言板</a></li>
+                        <li><a href="#about">关于</a></li>
+                        <li><a href="#search-demo">搜索</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+
+        <div id="searchFormWrapper" class="search-form-wrapper">
+            <div class="search-container">
+                <input type="text" id="searchField" placeholder="搜索文章..." />
+                <button type="submit" class="search-submit">
+                    <i class="fas fa-search"></i>
+                </button>
+                <div id="searchResults" class="search-results"></div>
+            </div>
+        </div>
+    </header>
+
+    <div class="sakura-petals" id="sakuraPetals"></div>
+
+    <!-- 首页预览 -->
+    <section id="home" class="preview-section active">
+        <!-- 全屏封面 -->
+        <div class="hero-cover">
+            <div class="hero-overlay"></div>
+            <div class="hero-content">
+                <h1 class="hero-title">随心3oo</h1>
+                <p class="hero-subtitle">世界晴朗，万事可爱</p>
+            </div>
+            <div class="scroll-hint">
+                <i class="fas fa-chevron-down"></i>
+                <span>向下滚动</span>
+            </div>
+            <div class="wave-container">
+                <svg class="wave wave1" viewBox="0 0 1440 120" preserveAspectRatio="none">
+                    <path d="M0,60 C180,100 360,20 540,60 C720,100 900,20 1080,60 C1260,100 1440,20 1440,60 L1440,120 L0,120 Z"></path>
+                </svg>
+                <svg class="wave wave2" viewBox="0 0 1440 120" preserveAspectRatio="none">
+                    <path d="M0,40 C240,80 480,0 720,40 C960,80 1200,0 1440,40 L1440,120 L0,120 Z"></path>
+                </svg>
+                <svg class="wave wave3" viewBox="0 0 1440 120" preserveAspectRatio="none">
+                    <path d="M0,80 C180,40 360,100 540,60 C720,20 900,80 1080,40 C1260,0 1440,60 1440,80 L1440,120 L0,120 Z"></path>
+                </svg>
+            </div>
+        </div>
+
+        <main class="site-main home-content">
+            <div class="container">
+                <div class="posts-wrapper">
+                    <article class="post-card" data-target="#single">
+                        <div class="post-thumbnail">
+                            <img src="https://picsum.photos/600/400?random=1" alt="文章缩略图">
+                        </div>
+                        <div class="post-content">
+                            <header class="post-header">
+                                <div class="post-categories">
+                                    <a href="#" class="category-tag">技术分享</a>
+                                </div>
+                                <h2 class="post-title">WordPress主题开发入门指南</h2>
+                            </header>
+                            <div class="post-meta">
+                                <span class="post-date">
+                                    <i class="far fa-calendar-alt"></i>
+                                    2026年3月20日
+                                </span>
+                                <span class="post-author">
+                                    <i class="far fa-user"></i>
+                                    Admin
+                                </span>
+                                <span class="post-reading-time">
+                                    <i class="far fa-clock"></i>
+                                    5 分钟阅读
+                                </span>
+                            </div>
+                            <div class="post-excerpt">
+                                本文将带你了解WordPress主题开发的基础知识，包括模板层次结构、常用函数以及最佳实践...
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="post-card" data-target="#single">
+                        <div class="post-thumbnail">
+                            <img src="https://picsum.photos/600/400?random=2" alt="文章缩略图">
+                        </div>
+                        <div class="post-content">
+                            <header class="post-header">
+                                <div class="post-categories">
+                                    <a href="#" class="category-tag">生活随笔</a>
+                                </div>
+                                <h2 class="post-title">春日赏樱指南：日本京都之旅</h2>
+                            </header>
+                            <div class="post-meta">
+                                <span class="post-date">
+                                    <i class="far fa-calendar-alt"></i>
+                                    2026年3月18日
+                                </span>
+                                <span class="post-author">
+                                    <i class="far fa-user"></i>
+                                    Admin
+                                </span>
+                                <span class="post-reading-time">
+                                    <i class="far fa-clock"></i>
+                                    8 分钟阅读
+                                </span>
+                            </div>
+                            <div class="post-excerpt">
+                                三月的京都，樱花烂漫。本文记录了我在京都赏樱的美好时光，推荐最佳赏樱地点...
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="post-card" data-target="#single">
+                        <div class="post-thumbnail">
+                            <img src="https://picsum.photos/600/400?random=3" alt="文章缩略图">
+                        </div>
+                        <div class="post-content">
+                            <header class="post-header">
+                                <div class="post-categories">
+                                    <a href="#" class="category-tag">动漫推荐</a>
+                                </div>
+                                <h2 class="post-title">2026年春季新番推荐榜单</h2>
+                            </header>
+                            <div class="post-meta">
+                                <span class="post-date">
+                                    <i class="far fa-calendar-alt"></i>
+                                    2026年3月15日
+                                </span>
+                                <span class="post-author">
+                                    <i class="far fa-user"></i>
+                                    Admin
+                                </span>
+                                <span class="post-reading-time">
+                                    <i class="far fa-clock"></i>
+                                    6 分钟阅读
+                                </span>
+                            </div>
+                            <div class="post-excerpt">
+                                2026年春季新番即将开播，本文为你精选了十部值得期待的动画作品，涵盖各种类型...
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="post-card" data-target="#single">
+                        <div class="post-thumbnail">
+                            <img src="https://picsum.photos/600/400?random=4" alt="文章缩略图">
+                        </div>
+                        <div class="post-content">
+                            <header class="post-header">
+                                <div class="post-categories">
+                                    <a href="#" class="category-tag">技术分享</a>
+                                </div>
+                                <h2 class="post-title">CSS动画效果实战：打造炫酷网页</h2>
+                            </header>
+                            <div class="post-meta">
+                                <span class="post-date">
+                                    <i class="far fa-calendar-alt"></i>
+                                    2026年3月10日
+                                </span>
+                                <span class="post-author">
+                                    <i class="far fa-user"></i>
+                                    Admin
+                                </span>
+                                <span class="post-reading-time">
+                                    <i class="far fa-clock"></i>
+                                    10 分钟阅读
+                                </span>
+                            </div>
+                            <div class="post-excerpt">
+                                CSS动画可以为网页增添生动有趣的视觉效果。本文将介绍多种CSS动画技巧...
+                            </div>
+                        </div>
+                    </article>
+                </div>
+
+                <nav class="pagination">
+                    <div class="nav-links">
+                        <span class="current">1</span>
+                        <a href="#">2</a>
+                        <a href="#">3</a>
+                        <a href="#"><i class="fas fa-chevron-right"></i></a>
+                    </div>
+                </nav>
+            </div>
+        </main>
+    </section>
+
+    <!-- 归档页预览 -->
+    <section id="archive" class="preview-section">
+        <main class="site-main archive-page">
+            <div class="container">
+                <header class="archive-header">
+                    <div class="archive-icon"><i class="fas fa-folder"></i></div>
+                    <h1 class="archive-title">分类: 技术分享</h1>
+                    <div class="archive-description">分享技术知识、开发经验和最佳实践</div>
+                </header>
+
+                <div class="archive-filter">
+                    <form class="filter-form" method="get">
+                        <select class="filter-select">
+                            <option value="date">按时间排序</option>
+                            <option value="title">按标题排序</option>
+                            <option value="comment_count">按评论数排序</option>
+                        </select>
+                        <select class="filter-select">
+                            <option value="DESC">降序</option>
+                            <option value="ASC">升序</option>
+                        </select>
+                        <button type="submit" class="filter-btn">筛选</button>
+                    </form>
+                </div>
+
+                <div class="posts-wrapper">
+                    <article class="post-card" data-target="#single">
+                        <div class="post-thumbnail">
+                            <img src="https://picsum.photos/600/400?random=5" alt="文章缩略图">
+                        </div>
+                        <div class="post-content">
+                            <header class="post-header">
+                                <div class="post-categories">
+                                    <a href="#" class="category-tag">技术分享</a>
+                                </div>
+                                <h2 class="post-title">JavaScript ES2026 新特性解析</h2>
+                            </header>
+                            <div class="post-meta">
+                                <span class="post-date">
+                                    <i class="far fa-calendar-alt"></i>
+                                    2026年3月8日
+                                </span>
+                                <span class="post-author">
+                                    <i class="far fa-user"></i>
+                                    Admin
+                                </span>
+                                <span class="post-reading-time">
+                                    <i class="far fa-clock"></i>
+                                    7 分钟阅读
+                                </span>
+                            </div>
+                            <div class="post-excerpt">
+                                ES2026带来了许多令人兴奋的新特性，本文将详细介绍这些新功能及其应用场景...
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="post-card" data-target="#single">
+                        <div class="post-thumbnail">
+                            <img src="https://picsum.photos/600/400?random=6" alt="文章缩略图">
+                        </div>
+                        <div class="post-content">
+                            <header class="post-header">
+                                <div class="post-categories">
+                                    <a href="#" class="category-tag">技术分享</a>
+                                </div>
+                                <h2 class="post-title">Git工作流最佳实践</h2>
+                            </header>
+                            <div class="post-meta">
+                                <span class="post-date">
+                                    <i class="far fa-calendar-alt"></i>
+                                    2026年3月5日
+                                </span>
+                                <span class="post-author">
+                                    <i class="far fa-user"></i>
+                                    Admin
+                                </span>
+                                <span class="post-reading-time">
+                                    <i class="far fa-clock"></i>
+                                    12 分钟阅读
+                                </span>
+                            </div>
+                            <div class="post-excerpt">
+                                良好的Git工作流可以提高团队协作效率。本文分享几种常用的Git工作流模式...
+                            </div>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </main>
+    </section>
+
+    <!-- 留言板页面 -->
+    <section id="message-board" class="preview-section">
+        <main class="site-main message-board-page">
+            <div class="board-container">
+                <div class="board-header">
+                    <h2>留言板</h2>
+                    <button class="add-note-btn" id="addNoteBtn">
+                        <i class="fas fa-plus"></i> 添加便利贴
+                    </button>
+                </div>
+                <div class="blackboard" id="blackboard">
+                    <div class="sticky-note" data-id="1" style="left: 50px; top: 30px; transform: rotate(-3deg);">
+                        <div class="note-header">
+                            <span class="note-author">访客小明</span>
+                            <span class="note-time">2026-03-20</span>
+                        </div>
+                        <div class="note-content">
+                            <p>这个博客真漂亮！喜欢这个风格~</p>
+                        </div>
+                    </div>
+                    <div class="sticky-note" data-id="2" style="left: 200px; top: 80px; transform: rotate(2deg);">
+                        <div class="note-header">
+                            <span class="note-author">技术宅</span>
+                            <span class="note-time">2026-03-19</span>
+                        </div>
+                        <div class="note-content">
+                            <p>代码示例：</p>
+                            <code>console.log('Hello!');</code>
+                        </div>
+                    </div>
+                    <div class="sticky-note" data-id="3" style="left: 380px; top: 40px; transform: rotate(-1deg);">
+                        <div class="note-header">
+                            <span class="note-author">路人甲</span>
+                            <span class="note-time">2026-03-18</span>
+                        </div>
+                        <div class="note-content">
+                            <p>欢迎来我的博客逛逛~</p>
+                        </div>
+                    </div>
+                    <div class="sticky-note" data-id="4" style="left: 100px; top: 200px; transform: rotate(4deg);">
+                        <div class="note-header">
+                            <span class="note-author">动漫迷</span>
+                            <span class="note-time">2026-03-17</span>
+                        </div>
+                        <div class="note-content">
+                            <p>樱花飘落的效果太美了！</p>
+                        </div>
+                    </div>
+                    <div class="sticky-note" data-id="5" style="left: 300px; top: 220px; transform: rotate(-2deg);">
+                        <div class="note-header">
+                            <span class="note-author">博主</span>
+                            <span class="note-time">2026-03-16</span>
+                        </div>
+                        <div class="note-content">
+                            <p>感谢大家的支持！</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+    </section>
+
+    <!-- 关于页面 -->
+    <section id="about" class="preview-section">
+        <main class="site-main about-page">
+            <div class="container">
+                <div class="about-card">
+                    <div class="about-avatar">
+                        <img src="picture/avator.png" alt="头像">
+                    </div>
+                    <h1 class="about-name">随心3</h1>
+                    <p class="about-bio">热爱生活，热爱技术，热爱分享</p>
+                    <div class="about-stats">
+                        <div class="stat-item">
+                            <span class="stat-number">128</span>
+                            <span class="stat-label">文章</span>
+                        </div>
+                        <div class="stat-item">
+                            <span class="stat-number">1.2k</span>
+                            <span class="stat-label">评论</span>
+                        </div>
+                        <div class="stat-item">
+                            <span class="stat-number">5.6k</span>
+                            <span class="stat-label">阅读</span>
+                        </div>
+                    </div>
+                    <div class="about-social">
+                        <a href="#" class="social-link" title="GitHub">
+                            <i class="fab fa-github"></i>
+                        </a>
+                        <a href="#" class="social-link" title="Bilibili">
+                            <span class="bilibili-icon">B</span>
+                        </a>
+                        <a href="#" class="social-link" title="抖音">
+                            <i class="fab fa-tiktok"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="about-content card-content">
+                    <h2>关于这个博客</h2>
+                    <p>这是一个充满热爱与梦想的小天地。在这里，我记录生活中的点点滴滴，分享技术学习的心得，推荐喜爱的动漫作品。</p>
+                    <p>希望通过这个博客，能够结识更多志同道合的朋友，一起交流，一起成长。世界晴朗，万事可爱，愿每个人都能找到属于自己的美好。</p>
+                    <h3>技术栈</h3>
+                    <p>本博客基于 WordPress 构建，使用 PHP、HTML、CSS 和 JavaScript 开发。主题采用响应式设计，支持移动端访问。</p>
+                </div>
+            </div>
+        </main>
+    </section>
+
+    <!-- 搜索页面预览 -->
+    <section id="search-demo" class="preview-section">
+        <main class="site-main search-page">
+            <div class="container">
+                <header class="search-header">
+                    <div class="search-icon"><i class="fas fa-search"></i></div>
+                    <h1 class="search-title">搜索结果: WordPress</h1>
+                    <p class="search-count">找到 4 篇相关文章</p>
+                </header>
+
+                <div class="search-form-large">
+                    <form role="search" method="get" class="search-form">
+                        <input type="search" class="search-field" placeholder="输入关键词搜索..." value="WordPress">
+                        <button type="submit" class="search-submit">
+                            <i class="fas fa-search"></i> 搜索
+                        </button>
+                    </form>
+                </div>
+
+                <div class="search-results-wrapper">
+                    <article class="search-result-item" data-target="#single">
+                        <div class="result-content">
+                            <header class="result-header">
+                                <div class="post-categories">
+                                    <a href="#" class="category-tag">技术分享</a>
+                                </div>
+                                <h2 class="result-title">
+                                    <a href="#">WordPress主题开发入门指南</a>
+                                </h2>
+                            </header>
+                            <div class="result-meta">
+                                <span class="result-date">
+                                    <i class="far fa-calendar-alt"></i>
+                                    2026年3月20日
+                                </span>
+                                <span class="result-type">
+                                    <i class="far fa-file-alt"></i>
+                                    文章
+                                </span>
+                            </div>
+                            <div class="result-excerpt">
+                                本文将带你了解WordPress主题开发的基础知识，包括模板层次结构、常用函数以及最佳实践...
+                            </div>
+                            <a href="#" class="result-link">
+                                查看全文 <i class="fas fa-arrow-right"></i>
+                            </a>
+                        </div>
+                    </article>
+
+                    <article class="search-result-item" data-target="#single">
+                        <div class="result-content">
+                            <header class="result-header">
+                                <div class="post-categories">
+                                    <a href="#" class="category-tag">技术分享</a>
+                                </div>
+                                <h2 class="result-title">
+                                    <a href="#">WordPress性能优化技巧</a>
+                                </h2>
+                            </header>
+                            <div class="result-meta">
+                                <span class="result-date">
+                                    <i class="far fa-calendar-alt"></i>
+                                    2026年3月12日
+                                </span>
+                                <span class="result-type">
+                                    <i class="far fa-file-alt"></i>
+                                    文章
+                                </span>
+                            </div>
+                            <div class="result-excerpt">
+                                优化WordPress网站性能的实用技巧，包括缓存配置、图片优化和代码优化...
+                            </div>
+                            <a href="#" class="result-link">
+                                查看全文 <i class="fas fa-arrow-right"></i>
+                            </a>
+                        </div>
+                    </article>
+
+                    <article class="search-result-item" data-target="#single">
+                        <div class="result-content">
+                            <header class="result-header">
+                                <div class="post-categories">
+                                    <a href="#" class="category-tag">技术分享</a>
+                                </div>
+                                <h2 class="result-title">
+                                    <a href="#">WordPress插件开发入门</a>
+                                </h2>
+                            </header>
+                            <div class="result-meta">
+                                <span class="result-date">
+                                    <i class="far fa-calendar-alt"></i>
+                                    2026年3月8日
+                                </span>
+                                <span class="result-type">
+                                    <i class="far fa-file-alt"></i>
+                                    文章
+                                </span>
+                            </div>
+                            <div class="result-excerpt">
+                                从零开始学习WordPress插件开发，了解钩子系统和最佳实践...
+                            </div>
+                            <a href="#" class="result-link">
+                                查看全文 <i class="fas fa-arrow-right"></i>
+                            </a>
+                        </div>
+                    </article>
+                </div>
+
+                <nav class="pagination">
+                    <div class="nav-links">
+                        <span class="current">1</span>
+                        <a href="#">2</a>
+                        <a href="#"><i class="fas fa-chevron-right"></i></a>
+                    </div>
+                </nav>
+            </div>
+        </main>
+    </section>
+
+    <!-- 文章详情页预览 -->
+    <section id="single" class="preview-section">
+        <main class="site-main single-post">
+            <div class="container">
+                <div class="content-wrapper">
+                    <article class="single-article">
+                        <header class="article-header">
+                            <div class="post-categories">
+                                <a href="#" class="category-tag">技术分享</a>
+                            </div>
+                            <h1 class="article-title">WordPress主题开发入门指南</h1>
+                            <div class="article-meta">
+                                <span class="meta-item author">
+                                    <i class="far fa-user"></i>
+                                    Admin
+                                </span>
+                                <span class="meta-item date">
+                                    <i class="far fa-calendar-alt"></i>
+                                    2026年3月20日
+                                </span>
+                                <span class="meta-item reading-time">
+                                    <i class="far fa-clock"></i>
+                                    5 分钟阅读
+                                </span>
+                                <span class="meta-item views">
+                                    <i class="far fa-eye"></i>
+                                    1,234 次阅读
+                                </span>
+                            </div>
+                        </header>
+
+                        <div class="article-thumbnail">
+                            <img src="https://picsum.photos/1200/600?random=10" alt="文章封面">
+                        </div>
+
+                        <div class="article-content">
+                            <div class="table-of-contents">
+                                <h4 class="toc-title"><i class="fas fa-list"></i> 目录</h4>
+                                <ul class="toc-list">
+                                    <li class="toc-item toc-level-2"><a href="#section1">一、WordPress主题基础</a></li>
+                                    <li class="toc-item toc-level-2"><a href="#section2">二、模板层次结构</a></li>
+                                    <li class="toc-item toc-level-2"><a href="#section3">三、常用函数介绍</a></li>
+                                    <li class="toc-item toc-level-2"><a href="#section4">四、最佳实践</a></li>
+                                </ul>
+                            </div>
+
+                            <h2 id="section1">一、WordPress主题基础</h2>
+                            <p>WordPress主题是控制网站外观的文件集合。一个完整的主题通常包含PHP模板文件、样式表、JavaScript文件和图片资源。</p>
+                            
+                            <p>主题开发是WordPress定制化的核心技能，通过开发自定义主题，你可以完全掌控网站的外观和功能。</p>
+
+                            <blockquote>
+                                "好的主题不仅要美观，更要注重用户体验和性能优化。"
+                            </blockquote>
+
+                            <h2 id="section2">二、模板层次结构</h2>
+                            <p>WordPress使用模板层次结构来决定加载哪个模板文件。理解这个层次结构是主题开发的基础。</p>
+
+                            <pre><code>single.php      // 单篇文章模板
+archive.php     // 归档页面模板
+index.php       // 默认模板
+header.php      // 页头模板
+footer.php      // 页脚模板
+sidebar.php     // 侧边栏模板</code></pre>
+
+                            <h2 id="section3">三、常用函数介绍</h2>
+                            <p>WordPress提供了丰富的函数库，以下是一些最常用的函数：</p>
+
+                            <pre><code>// 获取文章标题
+the_title();
+
+// 获取文章内容
+the_content();
+
+// 获取文章缩略图
+the_post_thumbnail();
+
+// 获取文章分类
+the_category(', ');</code></pre>
+
+                            <h2 id="section4">四、最佳实践</h2>
+                            <p>在开发WordPress主题时，遵循以下最佳实践可以提高代码质量和维护性：</p>
+
+                            <ul>
+                                <li>使用WordPress编码标准</li>
+                                <li>正确转义输出数据</li>
+                                <li>使用子主题进行定制</li>
+                                <li>优化数据库查询</li>
+                                <li>添加适当的缓存机制</li>
+                            </ul>
+
+                            <h3>性能优化建议</h3>
+                            <p>性能是用户体验的关键因素。以下是一些优化建议：</p>
+
+                            <ol>
+                                <li>压缩CSS和JavaScript文件</li>
+                                <li>使用懒加载图片</li>
+                                <li>启用对象缓存</li>
+                                <li>减少HTTP请求</li>
+                            </ol>
+                        </div>
+
+                        <footer class="article-footer">
+                            <div class="post-tags">
+                                <a href="#" class="tag-link">#WordPress</a>
+                                <a href="#" class="tag-link">#主题开发</a>
+                                <a href="#" class="tag-link">#PHP</a>
+                            </div>
+
+                            <div class="article-navigation">
+                                <div class="nav-previous">
+                                    <a href="#archive"><i class="fas fa-chevron-left"></i> Git工作流最佳实践</a>
+                                </div>
+                                <div class="nav-next">
+                                    <a href="#archive">JavaScript ES2026 新特性解析 <i class="fas fa-chevron-right"></i></a>
+                                </div>
+                            </div>
+
+                            <div class="author-box">
+                                <div class="author-avatar">
+                                    <img src="https://picsum.photos/80/80?random=20" alt="作者头像">
+                                </div>
+                                <div class="author-info">
+                                    <h4 class="author-name">Admin</h4>
+                                    <p class="author-description">热爱技术与动漫的全栈开发者，专注于WordPress主题开发和前端技术分享。</p>
+                                </div>
+                            </div>
+
+                            <div class="related-posts">
+                                <h3 class="related-title">相关文章</h3>
+                                <div class="related-posts-grid">
+                                    <div class="related-post-item" data-target="#single">
+                                        <div class="related-thumb">
+                                            <img src="https://picsum.photos/300/200?random=11" alt="相关文章">
+                                        </div>
+                                        <h4 class="related-post-title">
+                                            <a href="#">WordPress插件开发入门</a>
+                                        </h4>
+                                    </div>
+                                    <div class="related-post-item" data-target="#single">
+                                        <div class="related-thumb">
+                                            <img src="https://picsum.photos/300/200?random=12" alt="相关文章">
+                                        </div>
+                                        <h4 class="related-post-title">
+                                            <a href="#">WordPress安全加固指南</a>
+                                        </h4>
+                                    </div>
+                                    <div class="related-post-item" data-target="#single">
+                                        <div class="related-thumb">
+                                            <img src="https://picsum.photos/300/200?random=13" alt="相关文章">
+                                        </div>
+                                        <h4 class="related-post-title">
+                                            <a href="#">WordPress性能优化技巧</a>
+                                        </h4>
+                                    </div>
+                                </div>
+                            </div>
+                        </footer>
+
+                        <div class="comments-area">
+                            <h3 class="comments-title">3 条评论</h3>
+                            <ul class="comment-list">
+                                <li class="comment-item">
+                                    <article class="comment-body">
+                                        <div class="comment-avatar">
+                                            <img src="https://picsum.photos/50/50?random=30" alt="头像">
+                                        </div>
+                                        <div class="comment-content">
+                                            <div class="comment-meta">
+                                                <span class="comment-author">小明</span>
+                                                <span class="comment-date">2026年3月20日</span>
+                                            </div>
+                                            <div class="comment-text">
+                                                写得很详细，对我这种新手很有帮助！
+                                            </div>
+                                            <div class="comment-reply">
+                                                <a href="#">回复</a>
+                                            </div>
+                                        </div>
+                                    </article>
+                                </li>
+                                <li class="comment-item">
+                                    <article class="comment-body">
+                                        <div class="comment-avatar">
+                                            <img src="https://picsum.photos/50/50?random=31" alt="头像">
+                                        </div>
+                                        <div class="comment-content">
+                                            <div class="comment-meta">
+                                                <span class="comment-author">技术爱好者</span>
+                                                <span class="comment-date">2026年3月20日</span>
+                                            </div>
+                                            <div class="comment-text">
+                                                模板层次结构那张图很清晰，收藏了！
+                                            </div>
+                                            <div class="comment-reply">
+                                                <a href="#">回复</a>
+                                            </div>
+                                        </div>
+                                    </article>
+                                </li>
+                            </ul>
+
+                            <div class="respond-form">
+                                <h3>发表评论</h3>
+                                <form class="comment-form">
+                                    <input type="text" placeholder="姓名 *" required>
+                                    <input type="email" placeholder="邮箱 *" required>
+                                    <textarea placeholder="评论内容..." required></textarea>
+                                    <button type="submit" class="submit-comment">发表评论</button>
+                                </form>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </main>
+    </section>
+
+    <footer class="site-footer">
+        <div class="container">
+            <div class="footer-widgets">
+                <div class="footer-widget">
+                    <h3>关于博客</h3>
+                    <p>世界晴朗，万事可爱</p>
+                </div>
+                <div class="footer-widget">
+                    <h3>快速链接</h3>
+                    <ul>
+                        <li><a href="#home">首页</a></li>
+                        <li><a href="#archive">归档</a></li>
+                        <li><a href="#about">关于</a></li>
+                        <li><a href="#message-board">留言板</a></li>
+                    </ul>
+                </div>
+                <div class="footer-widget">
+                    <h3>联系方式</h3>
+                    <div class="social-links">
+                        <a href="#" class="social-link" title="GitHub">
+                            <i class="fab fa-github"></i>
+                        </a>
+                        <a href="#" class="social-link" title="Twitter">
+                            <i class="fab fa-twitter"></i>
+                        </a>
+                        <a href="#" class="social-link" title="Bilibili">
+                            <span class="bilibili-icon">B</span>
+                        </a>
+                        <a href="#" class="social-link" title="抖音">
+                            <span class="douyin-icon">
+                                <svg viewBox="0 0 24 24" width="16" height="16" fill="currentColor">
+                                    <path d="M19.59 6.69a4.83 4.83 0 0 1-3.77-4.25V2h-3.45v13.67a2.89 2.89 0 0 1-5.2 1.74 2.89 2.89 0 0 1 2.31-4.64 2.93 2.93 0 0 1 .88.13V9.4a6.84 6.84 0 0 0-1-.05A6.33 6.33 0 0 0 5 20.1a6.34 6.34 0 0 0 10.86-4.43v-7a8.16 8.16 0 0 0 4.77 1.52v-3.4a4.85 4.85 0 0 1-1-.1z"/>
+                                </svg>
+                            </span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <p>&copy; 2026 随心3oo. All rights reserved.</p>
+                <p>Powered by WordPress</p>
+            </div>
+        </div>
+    </footer>
+
+    <div class="back-to-top" id="backToTop">
+        <i class="fas fa-chevron-up"></i>
+    </div>
+
+    <div class="login-modal" id="loginModal">
+        <div class="login-modal-content">
+            <h3>登录账号</h3>
+            <form class="login-form" id="loginForm">
+                <input type="text" placeholder="用户名" id="loginUsername" required>
+                <input type="password" placeholder="密码" id="loginPassword" required>
+                <button type="submit">登录</button>
+            </form>
+        </div>
+    </div>
+
+    <div class="note-modal" id="noteModal">
+        <div class="note-modal-content">
+            <h3>写便利贴</h3>
+            <textarea id="noteContent" placeholder="写下你的留言..."></textarea>
+            <div class="note-modal-actions">
+                <button class="cancel-btn" id="cancelNoteBtn">取消</button>
+                <button class="submit-btn" id="submitNoteBtn">发布</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.0/jquery.min.js"></script>
+    <script src="assets/js/main.js"></script>
+    <script>
+        (function($) {
+            var isLoggedIn = false;
+            var currentUser = '';
+            var isDragging = false;
+            var hasMoved = false;
+            var dragTarget = null;
+            var dragOffset = { x: 0, y: 0 };
+            var startPos = { x: 0, y: 0 };
+
+            $('.menu-toggle').on('click', function(e) {
+                e.preventDefault();
+                $('#primary-menu').toggleClass('active');
+            });
+
+            $(document).on('click', function(e) {
+                if ($(window).width() <= 768) {
+                    if (!$(e.target).closest('.main-navigation').length) {
+                        $('#primary-menu').removeClass('active');
+                    }
+                }
+            });
+
+            $('#primary-menu > li > a').on('click', function(e) {
+                var target = $(this).attr('href');
+                if (target && target.startsWith('#')) {
+                    e.preventDefault();
+                    $('#primary-menu').removeClass('active');
+                    $('.preview-section').removeClass('active');
+                    $(target).addClass('active');
+                    window.scrollTo(0, 0);
+                    updateHeaderStyle();
+                }
+            });
+
+            $('.post-card[data-target]').on('click', function(e) {
+                var target = $(this).data('target');
+                e.preventDefault();
+                $('.preview-section').removeClass('active');
+                $(target).addClass('active');
+                window.scrollTo(0, 0);
+                updateHeaderStyle();
+            });
+
+            $('.related-post-item').on('click', function(e) {
+                e.preventDefault();
+                $('.preview-section').removeClass('active');
+                $('#single').addClass('active');
+                window.scrollTo(0, 0);
+                updateHeaderStyle();
+            });
+
+            $('.search-result-item').on('click', function(e) {
+                e.preventDefault();
+                $('.preview-section').removeClass('active');
+                $('#single').addClass('active');
+                window.scrollTo(0, 0);
+                updateHeaderStyle();
+            });
+
+            function updateHeaderStyle() {
+                var $activeSection = $('.preview-section.active');
+                var isHome = $activeSection.attr('id') === 'home';
+                var scrollTop = $(window).scrollTop();
+                
+                if (isHome && scrollTop < 100) {
+                    $('.site-header').removeClass('scrolled');
+                } else {
+                    $('.site-header').addClass('scrolled');
+                }
+            }
+
+            $(window).on('scroll', function() {
+                updateHeaderStyle();
+                updateLive2dVisibility();
+            });
+
+            function updateLive2dVisibility() {
+                var $landlord = $('#landlord');
+                if ($landlord.length === 0) return;
+                
+                var $activeSection = $('.preview-section.active');
+                var isHome = $activeSection.attr('id') === 'home';
+                var scrollTop = $(window).scrollTop();
+                var heroHeight = $('.hero-cover').outerHeight() || window.innerHeight;
+                
+                if (isHome && scrollTop < heroHeight - 100) {
+                    $landlord.removeClass('visible');
+                } else {
+                    $landlord.addClass('visible');
+                }
+            }
+
+            updateHeaderStyle();
+
+            setTimeout(function() {
+                updateLive2dVisibility();
+            }, 500);
+
+            $(document).on('mousedown', '.sticky-note', function(e) {
+                if ($(e.target).closest('.note-header').length) return;
+                
+                isDragging = true;
+                hasMoved = false;
+                dragTarget = $(this);
+                dragTarget.addClass('dragging');
+                
+                var rect = dragTarget[0].getBoundingClientRect();
+                var boardRect = $('#blackboard')[0].getBoundingClientRect();
+                
+                dragOffset.x = e.clientX - rect.left;
+                dragOffset.y = e.clientY - rect.top;
+                startPos.x = e.clientX;
+                startPos.y = e.clientY;
+                
+                e.preventDefault();
+            });
+
+            $(document).on('mousemove', function(e) {
+                if (!isDragging || !dragTarget) return;
+                
+                if (Math.abs(e.clientX - startPos.x) > 5 || Math.abs(e.clientY - startPos.y) > 5) {
+                    hasMoved = true;
+                }
+                
+                var boardRect = $('#blackboard')[0].getBoundingClientRect();
+                var x = e.clientX - boardRect.left - dragOffset.x;
+                var y = e.clientY - boardRect.top - dragOffset.y;
+                
+                x = Math.max(0, Math.min(x, boardRect.width - dragTarget.outerWidth()));
+                y = Math.max(0, Math.min(y, boardRect.height - dragTarget.outerHeight()));
+                
+                dragTarget.css({
+                    left: x + 'px',
+                    top: y + 'px'
+                });
+            });
+
+            $(document).on('mouseup', function(e) {
+                if (dragTarget) {
+                    dragTarget.removeClass('dragging');
+                }
+                
+                if (isDragging && !hasMoved && dragTarget) {
+                    var $note = dragTarget;
+                    var $content = $note.find('.note-content');
+                    
+                    $('.sticky-note').not($note).removeClass('expanded');
+                    $('.note-content').not($content).addClass('collapsed');
+                    
+                    if ($note.hasClass('expanded')) {
+                        $note.removeClass('expanded');
+                        $content.addClass('collapsed');
+                    } else {
+                        $note.addClass('expanded');
+                        $content.removeClass('collapsed');
+                    }
+                }
+                
+                isDragging = false;
+                hasMoved = false;
+                dragTarget = null;
+            });
+
+            $(document).on('click', function(e) {
+                if (!$(e.target).closest('.sticky-note').length) {
+                    $('.sticky-note').removeClass('expanded');
+                    $('.note-content').addClass('collapsed');
+                }
+            });
+
+            $('.note-content').addClass('collapsed');
+
+            $('#addNoteBtn').on('click', function() {
+                if (!isLoggedIn) {
+                    $('#loginModal').addClass('active');
+                } else {
+                    $('#noteModal').addClass('active');
+                }
+            });
+
+            $('#loginForm').on('submit', function(e) {
+                e.preventDefault();
+                currentUser = $('#loginUsername').val();
+                isLoggedIn = true;
+                $('#loginModal').removeClass('active');
+                $('#noteModal').addClass('active');
+                $('#loginUsername').val('');
+                $('#loginPassword').val('');
+            });
+
+            $('#loginModal').on('click', function(e) {
+                if (e.target === this) {
+                    $(this).removeClass('active');
+                }
+            });
+
+            $('#cancelNoteBtn').on('click', function() {
+                $('#noteModal').removeClass('active');
+                $('#noteContent').val('');
+            });
+
+            $('#noteModal').on('click', function(e) {
+                if (e.target === this) {
+                    $(this).removeClass('active');
+                    $('#noteContent').val('');
+                }
+            });
+
+            $('.scroll-hint').on('click', function() {
+                var heroHeight = $('.hero-cover').outerHeight();
+                $('html, body').animate({
+                    scrollTop: heroHeight
+                }, 800);
+            });
+
+            $('#submitNoteBtn').on('click', function() {
+                var content = $('#noteContent').val().trim();
+                if (!content) return;
+
+                var colors = [
+                    'linear-gradient(135deg, #fff9c4 0%, #fff59d 100%)',
+                    'linear-gradient(135deg, #ffecb3 0%, #ffe082 100%)',
+                    'linear-gradient(135deg, #c8e6c9 0%, #a5d6a7 100%)',
+                    'linear-gradient(135deg, #b3e5fc 0%, #81d4fa 100%)',
+                    'linear-gradient(135deg, #f8bbd9 0%, #f48fb1 100%)'
+                ];
+                var randomColor = colors[Math.floor(Math.random() * colors.length)];
+                var randomRotate = (Math.random() * 8 - 4).toFixed(1);
+                var randomX = Math.floor(Math.random() * 400) + 50;
+                var randomY = Math.floor(Math.random() * 300) + 30;
+                var today = new Date().toISOString().split('T')[0];
+
+                var $newNote = $('<div class="sticky-note" style="left: ' + randomX + 'px; top: ' + randomY + 'px; transform: rotate(' + randomRotate + 'deg); background: ' + randomColor + ';">' +
+                    '<div class="note-header">' +
+                    '<span class="note-author">' + currentUser + '</span>' +
+                    '<span class="note-time">' + today + '</span>' +
+                    '</div>' +
+                    '<div class="note-content collapsed">' +
+                    '<p>' + content.replace(/\n/g, '</p><p>') + '</p>' +
+                    '</div>' +
+                    '</div>');
+
+                $('#blackboard').append($newNote);
+                $('#noteModal').removeClass('active');
+                $('#noteContent').val('');
+            });
+
+            $('#searchToggle').on('click', function() {
+                $('#searchFormWrapper').toggleClass('active');
+                if ($('#searchFormWrapper').hasClass('active')) {
+                    $('#searchField').focus();
+                }
+            });
+
+            $(document).on('click', function(e) {
+                if (!$(e.target).closest('.header-search, .search-form-wrapper').length) {
+                    $('#searchFormWrapper').removeClass('active');
+                }
+            });
+
+            $('#searchField').on('input', function() {
+                var searchTerm = $(this).val().trim();
+                var results = $('#searchResults');
+                
+                if (searchTerm.length < 2) {
+                    results.empty();
+                    return;
+                }
+
+                var mockResults = [
+                    { title: 'WordPress主题开发入门指南', date: '2026年3月20日' },
+                    { title: 'WordPress性能优化技巧', date: '2026年3月12日' },
+                    { title: 'WordPress插件开发入门', date: '2026年3月8日' },
+                    { title: 'WordPress安全加固指南', date: '2026年3月5日' },
+                ];
+
+                var filteredResults = mockResults.filter(function(item) {
+                    return item.title.toLowerCase().includes(searchTerm.toLowerCase());
+                });
+
+                if (filteredResults.length > 0) {
+                    var html = '<ul class="search-results-list">';
+                    filteredResults.forEach(function(item) {
+                        html += '<li class="search-result-item"><a href="#single"><span class="result-title">' + item.title + '</span><span class="result-date">' + item.date + '</span></a></li>';
+                    });
+                    html += '</ul>';
+                    results.html(html);
+                } else {
+                    results.html('<p class="no-results">没有找到相关文章</p>');
+                }
+            });
+
+            $('.search-results-list').on('click', 'a', function(e) {
+                e.preventDefault();
+                $('#searchFormWrapper').removeClass('active');
+                $('.preview-section').removeClass('active');
+                $('#single').addClass('active');
+                window.scrollTo(0, 0);
+            });
+
+        })(jQuery);
+    </script>
+
+    <div id="landlord">
+        <div class="message" style="opacity:0"></div>
+        <canvas id="live2d" width="280" height="250" class="live2d"></canvas>
+        <div class="hide-button">隐藏</div>
+    </div>
+
+    <script>
+        var message_Path = 'live2d/';
+        var home_Path = window.location.href;
+    </script>
+    <script src="live2d/js/live2d.js"></script>
+    <script src="live2d/js/message.js"></script>
+    <script type="text/javascript">
+        loadlive2d("live2d", "live2d/model/tia/model.json");
+    </script>
+</body>
+</html>
